@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <filter id="graniteNoise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.005" numOctaves="6" seed="31" result="noise" />
+      <feColorMatrix type="matrix" values="
+        0.15 0 0 0 0.18
+        0 0.45 0 0 0.42
+        0 0 0.85 0 0.65
+        0 0 0 1 0" result="blueTint" />
+      <feBlend mode="overlay" in="SourceGraphic" in2="blueTint" />
+    </filter>
+    <linearGradient id="blueBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B3B54" />
+      <stop offset="35%" stop-color="#2D6086" />
+      <stop offset="70%" stop-color="#4B88B2" />
+      <stop offset="100%" stop-color="#1A334A" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#blueBase)" filter="url(#graniteNoise)" />
+  <!-- Quartz Crystal Ribbons -->
+  <path d="M-50,250 Q250,180 500,400 T850,450" stroke="#E6F2F8" stroke-width="24" fill="none" opacity="0.45" filter="blur(14px)" />
+  <path d="M-50,250 Q250,180 500,400 T850,450" stroke="#FFFFFF" stroke-width="6" fill="none" opacity="0.75" filter="blur(3px)" />
+  <path d="M-20,450 Q300,380 600,600 T850,750" stroke="#79B5D8" stroke-width="16" fill="none" opacity="0.5" filter="blur(8px)" />
+  <path d="M100,-50 Q350,300 300,550 T650,850" stroke="#D1E8F4" stroke-width="12" fill="none" opacity="0.4" filter="blur(6px)" />
+  <path d="M500,50 Q650,200 700,500" stroke="#F0F8FF" stroke-width="4" fill="none" opacity="0.6" filter="blur(2px)" />
+</svg>

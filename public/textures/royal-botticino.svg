@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <filter id="marbleNoise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.004" numOctaves="6" seed="42" result="noise" />
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 0.94
+        0 1 0 0 0.91
+        0 0 1 0 0.83
+        0.5 0.5 0.5 0 0.6" in="noise" result="coloredNoise" />
+      <feBlend mode="multiply" in="SourceGraphic" in2="coloredNoise" />
+    </filter>
+    <linearGradient id="creamBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F1E5" />
+      <stop offset="50%" stop-color="#EFE6D5" />
+      <stop offset="100%" stop-color="#E8DCBE" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#creamBase)" filter="url(#marbleNoise)" />
+  <path d="M-50,200 Q200,180 400,350 T750,420 T850,600" stroke="#C8B38E" stroke-width="12" fill="none" opacity="0.35" filter="blur(6px)" />
+  <path d="M-30,220 Q220,190 390,360 T760,410" stroke="#9E8764" stroke-width="4" fill="none" opacity="0.45" filter="blur(2px)" />
+  <path d="M300,-50 Q450,200 350,500 T600,850" stroke="#D3C3A6" stroke-width="18" fill="none" opacity="0.3" filter="blur(10px)" />
+  <path d="M310,-40 Q440,210 360,490 T610,840" stroke="#B09A78" stroke-width="3" fill="none" opacity="0.4" filter="blur(1.5px)" />
+  <path d="M100,700 Q300,650 500,750 T850,700" stroke="#CBB99F" stroke-width="8" fill="none" opacity="0.25" filter="blur(4px)" />
+</svg>

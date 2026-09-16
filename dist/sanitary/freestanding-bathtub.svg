@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520">
+  <defs>
+    <filter id="tubFloorShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="36" stdDeviation="28" flood-color="#000000" flood-opacity="0.6" />
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#0B0E14" flood-opacity="0.45" />
+    </filter>
+    <radialGradient id="tubShellGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#F8FAFC" />
+      <stop offset="80%" stop-color="#D9E3EB" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </radialGradient>
+    <linearGradient id="tubRimGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DEE7EF" />
+      <stop offset="25%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="75%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#CBD8E2" />
+    </linearGradient>
+    <linearGradient id="bathFillerGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C59E33" />
+      <stop offset="35%" stop-color="#FCEBA6" />
+      <stop offset="65%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8C6E19" />
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#tubFloorShadow)">
+    <!-- Floor-Standing Champagne Gold Bath Filler Column (Beside Bathtub in 3/4 Perspective) -->
+    <ellipse cx="660" cy="390" rx="24" ry="10" fill="url(#bathFillerGold)" stroke="#785B12" stroke-width="1.5" />
+    <rect x="650" y="140" width="20" height="255" fill="url(#bathFillerGold)" stroke="#8C6E19" stroke-width="1.5" />
+    <!-- Spout Neck Arch over Tub -->
+    <path d="M 660 140 C 660 80, 595 80, 590 150" fill="none" stroke="url(#bathFillerGold)" stroke-width="16" stroke-linecap="round" />
+    <!-- Hand Shower Wand Bracket & Hose -->
+    <rect x="670" y="210" width="10" height="50" rx="4" fill="url(#bathFillerGold)" />
+    <path d="M 675 260 C 690 310, 675 350, 660 385" fill="none" stroke="#D4AF37" stroke-width="3.5" stroke-dasharray="2,2" />
+
+    <!-- 1. Outer Bathtub Sculpted Shell in 3/4 Perspective -->
+    <path d="M 70 210 
+             C 70 120, 180 80, 360 80 
+             C 540 80, 650 120, 650 210 
+             C 650 350, 560 450, 360 450 
+             C 160 450, 70 350, 70 210 Z" 
+          fill="url(#tubShellGrad)" 
+          stroke="#CBD5E1" 
+          stroke-width="3" />
+
+    <!-- Bottom Contact Ambient Occlusion -->
+    <path d="M 160 410 C 250 445, 470 445, 560 410 C 510 445, 210 445, 160 410 Z" 
+          fill="#0B0E14" opacity="0.4" filter="blur(4px)" />
+
+    <!-- 2. Tub Upper Lip Rim -->
+    <ellipse cx="360" cy="205" rx="285" ry="110" fill="url(#tubRimGrad)" stroke="#CBD5E0" stroke-width="3.5" />
+
+    <!-- 3. Inner Deep Soaking Chamber -->
+    <ellipse cx="360" cy="215" rx="255" ry="90" fill="#F8FAFC" stroke="#D1DCE5" stroke-width="2.5" />
+    <ellipse cx="360" cy="232" rx="225" ry="70" fill="#EDF3F8" />
+    
+    <!-- Water Shimmer & Reflection Plane -->
+    <ellipse cx="360" cy="250" rx="190" ry="50" fill="#DEEAF4" opacity="0.9" />
+    
+    <!-- Center Luxury Pop-Up Drain -->
+    <ellipse cx="360" cy="268" rx="18" ry="8" fill="url(#bathFillerGold)" stroke="#8C6E19" stroke-width="1.5" />
+
+    <!-- Crisp Glaze Highlight along Outer Contour -->
+    <path d="M 120 235 C 230 330, 490 330, 600 235" 
+          fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.85" />
+  </g>
+</svg>

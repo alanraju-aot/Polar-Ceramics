@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <filter id="concreteNoise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04 0.04" numOctaves="5" seed="55" result="noise" />
+      <feColorMatrix type="matrix" values="
+        0.5 0 0 0 0.45
+        0 0.5 0 0 0.46
+        0 0 0.5 0 0.48
+        0 0 0 0.3 0.2" result="concreteTint" />
+      <feBlend mode="multiply" in="SourceGraphic" in2="concreteTint" />
+    </filter>
+  </defs>
+  <rect width="800" height="800" fill="#888E94" filter="url(#concreteNoise)" />
+</svg>

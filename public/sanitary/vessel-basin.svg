@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480">
+  <defs>
+    <filter id="basinFloorShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="28" stdDeviation="22" flood-color="#000000" flood-opacity="0.55" />
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#0B0F17" flood-opacity="0.4" />
+    </filter>
+    <radialGradient id="basinExterior" cx="45%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F1F5F9" />
+      <stop offset="80%" stop-color="#DCE3EA" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </radialGradient>
+    <!-- Brushed Champagne Gold Metal Shader -->
+    <linearGradient id="champagneGoldTap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C59E33" />
+      <stop offset="25%" stop-color="#FCEBA6" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="80%" stop-color="#8C6E19" />
+      <stop offset="100%" stop-color="#E5C158" />
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#basinFloorShadow)">
+    <!-- Countertop / Plinth Contact Shadow -->
+    <ellipse cx="300" cy="380" rx="230" ry="26" fill="#05070A" opacity="0.5" filter="blur(8px)" />
+
+    <!-- 1. Luxury Tall Champagne Gold Monobloc Faucet (Standing Behind Basin in 3/4 Perspective) -->
+    <!-- Base Plinth -->
+    <ellipse cx="300" cy="130" rx="24" ry="9" fill="url(#champagneGoldTap)" stroke="#785B12" stroke-width="1.5" />
+    <!-- Vertical Pillar Column -->
+    <rect x="286" y="55" width="28" height="80" fill="url(#champagneGoldTap)" stroke="#8C6E19" stroke-width="1.5" />
+    <!-- Mixer Single Lever Handle -->
+    <path d="M 282 52 L 318 52 L 345 40 L 340 34 L 300 44 Z" fill="url(#champagneGoldTap)" stroke="#785B12" stroke-width="1" />
+    <!-- Curved High Arch Spout -->
+    <path d="M 300 55 C 300 -5, 370 -5, 370 50 L 364 95" 
+          fill="none" stroke="url(#champagneGoldTap)" stroke-width="20" stroke-linecap="round" />
+    <ellipse cx="364" cy="98" rx="9" ry="5" fill="#222" />
+    <circle cx="364" cy="98" r="3.5" fill="#D4AF37" />
+
+    <!-- 2. Sculpted Ceramic Vessel Outer Shell in 3/4 Perspective -->
+    <path d="M 85 240 
+             C 85 350, 180 405, 300 405 
+             C 420 405, 515 350, 515 240 
+             C 515 190, 420 150, 300 150 
+             C 180 150, 85 190, 85 240 Z" 
+          fill="url(#basinExterior)" 
+          stroke="#CAD5E0" 
+          stroke-width="2.5" />
+
+    <!-- Outer Rim Highlight Ring -->
+    <ellipse cx="300" cy="235" rx="215" ry="85" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="3" />
+
+    <!-- Inner Basin Cavity Deep Chamber -->
+    <ellipse cx="300" cy="245" rx="188" ry="68" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2" />
+    <ellipse cx="300" cy="258" rx="150" ry="50" fill="#EDF2F7" />
+
+    <!-- Water Basin Sheen Shimmer Layer -->
+    <ellipse cx="300" cy="272" rx="112" ry="34" fill="#E2EAF2" opacity="0.85" />
+    
+    <!-- Pop-Up Click-Clack Gold Drain Stopper -->
+    <ellipse cx="300" cy="282" rx="18" ry="9" fill="url(#champagneGoldTap)" stroke="#8C6E19" stroke-width="1.5" />
+
+    <!-- Front Lip Specular Glaze Reflection -->
+    <path d="M 125 250 C 200 310, 400 310, 475 250" 
+          fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.85" />
+  </g>
+</svg>

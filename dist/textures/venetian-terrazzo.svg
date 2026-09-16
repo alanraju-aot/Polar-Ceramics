@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#EAE5DE" />
+  <!-- Chips of marble, terracotta, quartz -->
+  <g opacity="0.85">
+    <polygon points="120,80 145,110 110,130 95,90" fill="#8B4513" />
+    <polygon points="340,60 370,85 360,115 320,90" fill="#2E4053" />
+    <polygon points="560,120 600,105 615,140 570,150" fill="#D4AC0D" />
+    <polygon points="720,50 750,75 730,110 705,80" fill="#78281F" />
+    <polygon points="210,220 250,200 240,245 190,240" fill="#117A65" />
+    <polygon points="450,280 490,260 510,300 460,320" fill="#2C3E50" />
+    <polygon points="680,310 710,335 690,370 660,340" fill="#AF601A" />
+    <polygon points="80,390 120,410 100,450 65,420" fill="#D35400" />
+    <polygon points="300,420 335,400 350,440 310,460" fill="#5D6D7E" />
+    <polygon points="530,470 565,495 550,535 510,505" fill="#884EA0" />
+    <polygon points="740,490 775,510 760,545 725,525" fill="#2471A3" />
+    <polygon points="170,580 205,565 220,605 180,620" fill="#B7950B" />
+    <polygon points="390,620 425,600 440,640 405,660" fill="#196F3D" />
+    <polygon points="620,640 660,620 675,665 635,680" fill="#7B241C" />
+    <polygon points="80,720 115,700 130,740 95,760" fill="#34495E" />
+    <polygon points="280,750 315,730 330,770 295,790" fill="#935116" />
+    <polygon points="510,740 545,720 560,760 525,780" fill="#1F618D" />
+    <polygon points="710,710 745,690 760,730 725,750" fill="#145A32" />
+  </g>
+  <!-- Smaller specks -->
+  <g fill="#A04000" opacity="0.6">
+    <circle cx="210" cy="110" r="8" />
+    <circle cx="480" cy="90" r="6" />
+    <circle cx="650" cy="220" r="10" />
+    <circle cx="160" cy="310" r="7" />
+    <circle cx="390" cy="360" r="9" />
+    <circle cx="600" cy="410" r="5" />
+    <circle cx="240" cy="490" r="8" />
+    <circle cx="450" cy="540" r="6" />
+    <circle cx="680" cy="580" r="10" />
+    <circle cx="140" cy="670" r="7" />
+    <circle cx="340" cy="710" r="8" />
+    <circle cx="580" cy="730" r="9" />
+  </g>
+</svg>
